@@ -1,0 +1,45 @@
+body {
+  padding: 0;
+  margin: 0 auto;
+  background: black;
+}
+
+.grid {
+  width: 100%;
+  margin-left: 15px;
+}
+
+.grid-item {
+    width: 200px;
+    height: 200px;
+    background: black;
+    margin: 1px auto;
+    margin-right: 1px;
+}
+
+.flip {
+ -moz-transform: scaleX(-1);
+ -o-transform: scaleX(-1);
+ -webkit-transform: scaleX(-1);
+ transform: scaleX(-1);
+ filter: FlipH;
+ -ms-filter: "FlipH";
+}
+.anti-flip {
+ -moz-transform: scaleX(1);
+ -o-transform: scaleX(1);
+ -webkit-transform: scaleX(1);
+ transform: scaleX(1);
+}
+
+.hidden {
+  width: 0px;
+  transition: .8s
+}
+
+.eyeFrame {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  z-index: -1;
+}
